@@ -149,7 +149,7 @@ title: "Help! I'm Getting Error 99"
       </div>
       <figure class="mt-6">
         
-        <img src="https://github.com/user-attachments/assets/466b5dcb-0be6-4797-a29b-fe76878c0263" alt="Error 99 Screenshot" width="720" height="406" />
+        <img src="images/error99.png" alt="Error 99 Screenshot" width="720" height="406" />
       </figure>
       <nav class="tabs" aria-label="Page sections">
         <a href="#applies">Does this apply?</a>
@@ -253,7 +253,7 @@ title: "Help! I'm Getting Error 99"
             <p>The way to do this is to move your account files directly. First, you'll need to download some sort of file manager on the <u><strong>emulator / failing device</strong></u>. For simplicity, I recommend downloading <a href="https://play.google.com/store/apps/details?id=com.marc.files">this app</a>, which is just a shortcut to the hidden built‑in Android system file explorer. There are other file explorers that work, but the system one has the best chance. Note that the system explorer is not necessarily the same as the stock one (e.g., on a Samsung phone, the system explorer is not the same as Samsung's files app). Not all file explorers support exploring the folder that we will need to access.</p>
             <p>Once you have your file explorer, you'll need to find your account files. These will be located in <code>Android/data/com.aniplex.fategrandorder/files/data</code>. <strong>Be careful.</strong> Make sure you are in <code>com.aniplex.fategrandorder</code> and <u><strong>not</strong></u> in <code>com.aniplex.fategrandorder<u><strong>.en</strong></u></code>. If it ends in <code>.en</code>, then you're looking at the NA application, not the JP application.</p>
             <figure>
-              <img src="https://github.com/user-attachments/assets/45922157-f2d3-44ff-935d-bdfa6214f2d7" alt="Image of FGO Files" width="720" height="406" />
+              <img src="images/fgoaccountfiles.jpg" alt="Image of FGO Files" width="720" height="406" />
             </figure>
             <p>You'll want to copy four files beginning with <code>54cc</code>, <code>969b</code>, <code>644b</code>, <code>e1a9</code>. Strictly speaking, only <code>54cc</code> is actually necessary, but it's a good idea to copy these four just to make sure things go smoothly. Put these files somewhere easy to access, but if you're using an emulator, you'll want to get them out of your emulator. The steps for that will depend on what emulator you are using.</p>
             <p>Once you have your account files, you'll need to take steps to move them based on what type of device your destination device is.</p>
@@ -278,29 +278,29 @@ e1a9f8e0ff970cc15b1a1d1e31d146db → friendcodesave.dat</code></pre>
                 <p><strong><u>Step 2: Make an iTunes Backup</u></strong><br/>Next, you'll need to make an iTunes backup. Download iTunes through the <a href="https://apps.microsoft.com/detail/9pb2mz1zmb1s?hl=en-US&gl=US">Microsoft Store</a>.</p>
                 <p>Click the "Phone" button towards the top.</p>
                 <figure>
-                  <img src="https://github.com/user-attachments/assets/f7b2a898-0074-4cc0-91ae-394caf877396" alt="Phone Button in iTunes" width="240" height="164" />
+                  <img src="images/ios instructions/phone button.png" alt="Phone Button in iTunes" width="240" height="164" />
                 </figure>
                 <p>Then, click "Summary"</p>
                 <figure>
-                  <img src="https://github.com/user-attachments/assets/6bfc7e73-4cd4-4a51-9dbf-a9265115e6a3" alt="Summary in iTunes" width="360" height="246" />
+                  <img src="images/ios instructions/summary.png" alt="Summary in iTunes" width="360" height="246" />
                 </figure>
                 <p>Next, click "Backup Now" before Backups. Do not encrypt the backup.</p>
                 <figure>
-                  <img src="https://github.com/user-attachments/assets/bc8de77a-0bcc-4e88-a4ea-074e3a4c59d9" alt="Backup in iTunes" width="720" height="436" />
+                  <img src="images/ios instructions/backup.png" alt="Backup in iTunes" width="720" height="436" />
                 </figure>
                 <p>To make sure it worked, click Edit &gt; Preferences, then click Devices. Make sure your backup is listed.</p>
                 <p><strong><u>Step 3: Edit the Backup with iMazing</u></strong><br/>Next, download the <a href="https://imazing.com/">iMazing</a> app.</p>
                 <figure>
-                  <img src="https://github.com/user-attachments/assets/c46257d3-d5e3-4641-ba9a-3bb87f84bf50" alt="iMazing" width="720" height="406" />
+                  <img src="images/ios instructions/imazing.jpg" alt="iMazing" width="720" height="406" />
                 </figure>
                 <p>Your backup should be listed under "Backups," but if it isn't, then you may need to go to <code>\Users\YOUR-USERNAME-HERE\Apple\MobileSync\Backup</code> and drag the backup into iMazing.</p>
                 <p>Next, open your backup in iMazing and navigate to the <code>com.aniplex.fategrandorder</code> folder (make sure it's not <code>.en</code>).</p>
                 <figure>
-                  <img src="https://github.com/user-attachments/assets/2bfb9560-c6c9-490b-8a0f-612107bfc022" alt="iMazing FGO" width="720" height="406" />
+                  <img src="images/ios instructions/imazing fgo.png" alt="iMazing FGO" width="720" height="406" />
                 </figure>
                 <p>Go to the "Documents" folder inside the FGO app.</p>
                 <figure>
-                  <img src="https://github.com/user-attachments/assets/eb7f8fe3-5f62-498a-94a6-a4d443693916" alt="iMazing FGO Documents" width="720" height="406" />
+                  <img src="images/ios instructions/imazing fgo documents.png" alt="iMazing FGO Documents" width="720" height="406" />
                 </figure>
                 <p>Then, delete the authsave.dat, authsave2.dat, signupsave.dat, and friendcodesave.dat files and replace them with the ones you saved from your failing environment using the "Delete" and "Copy to Backup" buttons towards the bottom of the screen. It may ask you to make an editable backup first. If so, do it and make sure to give it a recognizable name to distinguish it.</p>
                 <p><strong><u>Step 4: Restore the Edited Backup</u></strong><br/>Finally, go back to iTunes and restore the edited backup. If iTunes does not see the edited backup, you may need to go back to iMazing, click "Overview" under your backup name, click "show in File Explorer," and then manually move the backup file to the iTunes backup directory (<code>\Users\YOUR-USERNAME-HERE\Apple\MobileSync\Backup</code>).</p>
