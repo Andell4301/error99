@@ -202,7 +202,7 @@ title: "Help! I'm Getting Error 99"
         </details>
 
         <details>
-          <summary><span class="chev" aria-hidden="true"></span> <strong>What is Error 99? Why Am I Getting This Error?</strong></summary>
+          <summary><span class="chev" aria-hidden="true"></span> <strong>What Is Error 99? Why Am I Getting This Error?</strong></summary>
           <div class="content">
             <p>Error 99 is FGO's generic error code. They send it whenever an error has occurred, but they don't have a specific error code to handle the situation. In other words, Error 99 can be caused by anything.</p>
             <p>With that said, if you answered "yes" to all of the three questions above, then there is <strong>probably</strong> a certain reason for your Error 99.</p>
@@ -212,7 +212,7 @@ title: "Help! I'm Getting Error 99"
         </details>
 
         <details>
-          <summary><span class="chev" aria-hidden="true"></span> <strong>The Image Says "99-175..." But Mine is "99-Something Else"</strong></summary>
+          <summary><span class="chev" aria-hidden="true"></span> <strong>The Image Says "99-175..." But Mine Is "99-Something Else"</strong></summary>
           <div class="content">
             <p>A very common misconception is that the numbers after 99 mean something (e.g., that 99-174 is different than 99-175). This is not true. The numbers after the 99- are just a unix timestamp. Try writing the numbers after the 99- on <a href="https://www.epochconvert.com/">this site</a> to see for yourself. For example, the 1750080519 in the image at the top of this page is Mon, 16 Jun 2025 13:28:39 UTC.</p>
           </div>
@@ -264,14 +264,14 @@ title: "Help! I'm Getting Error 99"
             <p>Once you have your account files, you'll need to take steps to move them based on what type of device your destination device is.</p>
 
             <details class="mt-6">
-              <summary><span class="chev" aria-hidden="true"></span> <strong>I'm Moving to an Android Device</strong></summary>
+              <summary><span class="chev" aria-hidden="true"></span> <strong>I'm Moving To An Android Device</strong></summary>
               <div class="content">
                 <p>In that case, it's straightforward. By this point, you should have already downloaded your (ideally official, direct from the store) FGO app on your destination device. Now you just need to go into the same location on your destination device, <code>Android/data/com.aniplex.fategrandorder/files/data</code> (make sure it's not <code>.en</code>), and paste in the four files you copied from your failing environment. You can download and use the same file manager app to do it that you used to get the files on your failing environment. Then, start up FGO and you'll be automatically logged in.</p>
               </div>
             </details>
 
             <details class="mt-6">
-              <summary><span class="chev" aria-hidden="true"></span> <strong>I'm Moving to an Apple Device</strong></summary>
+              <summary><span class="chev" aria-hidden="true"></span> <strong>I'm Moving To An Apple Device</strong></summary>
               <div class="content">
                 <p>I do not use iOS personally, so this information comes from (1) a <a href="https://www.reddit.com/r/grandorder/comments/hfbz0h/comment/fw1ln24">Reddit post by King_Cabbage and the various replies beneath it</a>; (2) <a href="https://support.apple.com/guide/itunes/back-up-your-iphone-ipad-or-ipod-touch-itns3280/windows">Apple's</a> and <a href="https://imazing.com/guides/how-to-edit-iphone-ipad-backup">iMazing's</a> documentation; and (3) my recent experience of helping someone on iOS restore their account (successfully). If you are more familiar with Apple and would like to help refine these instructions, please join this discord server https://eresh.moe/support and ping Andell.</p>
                 <p>Additionally, I don't know how to do this on Mac, so if someone could provide some info on that, that would be helpful. The following instructions assume you have access to a Windows PC.</p>
@@ -315,7 +315,7 @@ e1a9f8e0ff970cc15b1a1d1e31d146db → friendcodesave.dat</code></pre>
         </details>
 
         <details class="mt-6">
-          <summary><span class="chev" aria-hidden="true"></span> <strong>How Do I Make a Japanese Google Play Account Outside of Japan? How Do I Purchase SQ Outside of Japan?</strong></summary>
+          <summary><span class="chev" aria-hidden="true"></span> <strong>How Do I Make A Japanese Google Play Account Outside Of Japan? How Do I Purchase SQ Outside Of Japan?</strong></summary>
           <div class="callout danger"><strong>WARNING</strong> — Follow the laws of your jurisdiction. This is not legal advice. For legal advice, contact a lawyer. It may or may not be legal in your jurisdiction to follow these instructions. I do not know what jurisdiction you are in, nor do I know the laws of such jurisdictions. Check the laws of your jurisdiction before taking any actions listed below. I do not endorse, recommend, condone, or advocate for anything you see in this informational piece. It is your responsibility to know and abide by the local laws of your jurisdiction.</div>
           <div class="content">
               <p>This information comes from a <a href="https://www.reddit.com/r/grandorder/comments/wrbhip/steps_on_how_to_create_a_jp_google_play_account/">Reddit post by sdarkpaladin</a>.</p>
@@ -341,7 +341,7 @@ e1a9f8e0ff970cc15b1a1d1e31d146db → friendcodesave.dat</code></pre>
         <h2>More Details</h2>
 
         <details>
-          <summary><span class="chev" aria-hidden="true"></span> <strong>More Details on the Play Integrity API</strong></summary>
+          <summary><span class="chev" aria-hidden="true"></span> <strong>More Details On The Play Integrity API</strong></summary>
           <div class="content">
             <p>Google's <a href="https://developer.android.com/google/play/integrity">Play Integrity API</a> is Google's way of letting app developers check whether their app is running in a "genuine" (Google-certified) environment or not. When a developer wants to check integrity (such as when you open their app), they will send a request for an "integrity verdict" from Google Play Services. Google Play Services will collect details about your environment using privileged, tamper-proof methods (such as hardware-backed attestation), cryptographically sign it (to prevent tampering in transit), and return a response with a range of information, including a <a href="https://developer.android.com/google/play/integrity/verdicts">verdict on whether your environment passes the check</a>.</p>
             <p>The returned response will usually be either: blank (failure), <code>MEETS_BASIC_INTEGRITY</code>, or <code>MEETS_STRONG_INTEGRITY</code>. There are a couple of other possible responses, but they are not relevant here. You can see more about what each verdict entails in the documentation linked above. Some people seem to have gotten through with <code>BASIC_INTEGRITY</code>, but you should aim for <code>STRONG_INTEGRITY</code> if you're following this guide to fix your Error‑99‑afflicted account.</p>
@@ -353,7 +353,7 @@ e1a9f8e0ff970cc15b1a1d1e31d146db → friendcodesave.dat</code></pre>
         </details>
 
         <details class="mt-6">
-          <summary><span class="chev" aria-hidden="true"></span> <strong>More Details on "Eligible" Accounts / How Does Lasengle Know My Account Was Purchased / What If I Bought From My Friend?</strong></summary>
+          <summary><span class="chev" aria-hidden="true"></span> <strong>More Details On "Eligible" Accounts / How Does Lasengle Know My Account Was Purchased / What If I Bought From My Friend?</strong></summary>
           <div class="content">
             <p>Elsewhere in this guide, I mention that one of the criteria to receive Error 99 is that your account is purchased. This is mostly true and covers most situations I see in practice, but it is not technically precise. Lasengle does not know that you purchased your account from someone.</p>
             <p>The actual thing that Lasengle looks for is a certain type of bot involvement with your account, and there is a certain signal that gives it away to Lasengle. I am being intentionally vague here because I do not want to make it easier for account sellers to bypass what the actual check is. Even if this check is met, however, they still only take action on the account if it is being played in an environment that fails integrity and if it has not purchased SQ before. In other words, they're trying to prevent account sellers from mass‑creating accounts, leveling and maintaining them programmatically or in environments that aren't legitimate user phones, and stockpiling SQ to sell as an SQ account.</p>
@@ -362,7 +362,7 @@ e1a9f8e0ff970cc15b1a1d1e31d146db → friendcodesave.dat</code></pre>
         </details>
 
         <details class="mt-6">
-          <summary><span class="chev" aria-hidden="true"></span> <strong>It's Possible to Spoof Play Integrity on a Rooted Emulator, Right?</strong></summary>
+          <summary><span class="chev" aria-hidden="true"></span> <strong>It's Possible To Spoof Play Integrity On A Rooted Emulator, Right?</strong></summary>
           <div class="content">
             <p>In limited ways—but this is not recommended. There are multiple levels of integrity (see the section on Play Integrity). Generally, you can only spoof the weaker one. That might be enough for FGO for now, but it is not a sustainable solution.</p>
             <p>There is also a way to spoof strong integrity, but it works by either using leaked keys that Google actively bans, or forwarding integrity requests to a sort of device farm for approval. This is a fragile approach and likely to break. Finally, if I recall correctly, FGO doesn't like rooted devices anyway, so even if you ignore the other warnings, you might also have to hide your root status.</p>
