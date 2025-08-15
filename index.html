@@ -100,8 +100,13 @@ title: "Help! I'm Getting Error 99"
 
   figure{margin:12px auto; text-align:center}
   figure img{
-    max-width:100%; border-radius:var(--radius-md);
-    border:1px solid var(--border); box-shadow:0 6px 16px var(--shadow)
+    display:block;
+    max-width:100%;
+    width:auto;
+    height:auto !important; /* keep intrinsic ratio no matter what */
+    border-radius:var(--radius-md);
+    border:1px solid var(--border);
+    box-shadow:0 6px 16px var(--shadow);
   }
   figcaption{color:var(--muted); font-size:.9rem; margin-top:6px}
 
