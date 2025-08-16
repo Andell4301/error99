@@ -289,7 +289,8 @@ e1a9f8e0ff970cc15b1a1d1e31d146db → friendcodesave.dat</code></pre>
                 <figure>
                   <img src="images/ios instructions/summary.png" alt="Summary in iTunes" width="360" height="246" />
                 </figure>
-                <p>Next, click "Backup Now" before Backups. Do not encrypt the backup.</p>
+                <p>Next, click "Backup Now."</p>
+                <div class="callout warning mt-6"><strong>WARNING</strong> — Do not encrypt the backup; this won't work if you do!.</div>
                 <figure>
                   <img src="images/ios instructions/backup.png" alt="Backup in iTunes" width="720" height="436" />
                 </figure>
@@ -298,7 +299,7 @@ e1a9f8e0ff970cc15b1a1d1e31d146db → friendcodesave.dat</code></pre>
                 <figure>
                   <img src="images/ios instructions/imazing.jpg" alt="iMazing" width="720" height="406" />
                 </figure>
-                <p>Your backup should be listed under "Backups," but if it isn't, then you may need to go to <code>\Users\YOUR-USERNAME-HERE\Apple\MobileSync\Backup</code> and drag the backup into iMazing.</p>
+                <p>Your backup should be listed under "Backups," but if it isn't, then you may need to go to <code>\Users\USERNAME\Apple\MobileSync\Backup</code> and drag the backup into iMazing.</p>
                 <p>Next, open your backup in iMazing and navigate to the <code>com.aniplex.fategrandorder</code> folder (make sure it's not <code>.en</code>).</p>
                 <figure>
                   <img src="images/ios instructions/imazing fgo.png" alt="iMazing FGO" width="720" height="406" />
@@ -308,7 +309,38 @@ e1a9f8e0ff970cc15b1a1d1e31d146db → friendcodesave.dat</code></pre>
                   <img src="images/ios instructions/imazing fgo documents.png" alt="iMazing FGO Documents" width="720" height="406" />
                 </figure>
                 <p>Then, delete the authsave.dat, authsave2.dat, signupsave.dat, and friendcodesave.dat files and replace them with the ones you saved from your failing environment using the "Delete" and "Copy to Backup" buttons towards the bottom of the screen. It may ask you to make an editable backup first. If so, do it and make sure to give it a recognizable name to distinguish it.</p>
-                <p><strong><u>Step 4: Restore the Edited Backup</u></strong><br/>Finally, go back to iTunes and restore the edited backup. If iTunes does not see the edited backup, you may need to go back to iMazing, click "Overview" under your backup name, click "show in File Explorer," and then manually move the backup file to the iTunes backup directory (<code>\Users\YOUR-USERNAME-HERE\Apple\MobileSync\Backup</code>).</p>
+                <p><strong><u>Step 4: Prepare the Edited Backup for Restoration</u></strong><br/></p>
+                <p>If you have iMazing's premium version, you should be able to backup directly from iMazing, and can even limit the backup to just FGO. If you don't, though, then you'll need to prepare the backup to restore through iTunes.</p>
+                <p>First, click the "overview" button in your edited backup in iMazing.</p>
+                  <figure>
+                    <img src="images/ios instructions/overview.png" alt="Overview button in iMazing" width="720" height="436" />
+                  </figure>
+                  <p>Next, click "show in File Explorer."</p>
+                  <figure>
+                    <img src="images/ios instructions/show in explorer.png" alt="Show in explorer button in iMazing" width="720" height="436" />
+                  </figure>
+                  <p>This will take you to the iMazing backup in File Explorer. It should be full of two-character named folders. You need to move out one folder higher, as shown in the image below.</p>
+                  <figure>
+                    <img src="images/ios instructions/filesystem" alt="The backup directory." width="720" height="436" />
+                  </figure>
+                  <p>You should see a folder with just one subfolder that looks like a date and time. Copy this folder.</p>
+                  <figure>
+                    <img src="images/ios instructions/filesystem2" alt="The folder to copy" width="720" height="436" />
+                  </figure>
+                  <p>Next, you'll need to return to your iTunes backup directory. Remember, that's <code>\Users\USERNAME\Apple\MobileSync\Backup</code>. There, you should see the iMazing folder as well as a folder with a long name; that's your iTunes backup you took earlier. You want to paste the iMazing backup you copied into this folder, alongside the other two.</p>
+                  <figure>
+                    <img src="images/ios instructions/filesystem3" alt="Where to Paste iMazing backup" width="720" height="436" />
+                  </figure>
+                  <p>Once you've done so, you should see something like this:</p>
+                  <figure>
+                    <img src="images/ios instructions/filesystem4" alt="Pasted iMazing backup" width="720" height="436" />
+                  </figure>
+                <p><strong><u>Step 5: Restore the Edited Backup</u></strong></p>
+                <p>Finally, go back to iTunes and restore the edited backup The restore button should now be available in the same place you backed up before.</p>
+                <figure>
+                  <img src="images/ios instructions/restore available.png" alt="Restore in iTunes" width="720" height="436" />
+                </figure>
+                <p>If you moved the iMazing backup correctly, it should ask you to choose your device name, and one of the options should be the edited backup that you made and gave a recognizable name. Restore that backup.</p>
               </div>
             </details>
           </div>
